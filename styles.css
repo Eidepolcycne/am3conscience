@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --backround: #f9e9e7;
+    --primary-color: #cb9c9c;
+    font-family: 'Courgette', cursive;
+    background-color: var(--backround);
+
+}
+
+header {
+    background-color: var(--backround);
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+}
+
+.box-images {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    /* width: auto; */
+}
+
+.image-en-tete {
+    width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+aside{
+    padding-top: 20vh;
+    float: left;
+    width: 30vh;
+    height: 60vw;
+}
+
+main {
+    padding-top: 20vh;
+    text-align: center;
+    width: 60vw;
+    height: 60vw;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mots-important,
+span {
+    color: var(--primary-color);
+}
+
+footer {
+    height: 20vh;
+    width: 100vw;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    width: auto;
+}
+.image-profil{
+    width:100%;
+    height:auto;
+    padding-top: 20vh;
+    float: right;
+}
