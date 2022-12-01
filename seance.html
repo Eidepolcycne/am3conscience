@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <title>Seance</title>
 </head>
+
 <body>
     <header>
         <div class="box-images">
-            <img src="assets/logo1-3.png" alt="image du logo">
-            <img class="image-en-tete" src="assets/ame-et-conscience2-2.png" alt="image ame et conscience">
-            <img src="assets/fleur2.png" alt="image de fleur">
+            <img src="assets/logo1-3.png" alt="image du logo" class="logo">
+            <h1>Am&Conscience</h1>
+            <img src="assets/fleur2.png" alt="image de fleur" class="fleur-en-tete">
         </div>
-        <div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
             <nav>
                 <ul>
-                    <li><a class=current href="index.html">accueil</a></li>
+                    <li><a href="index.html">accueil</a></li>
                     <li><a href="qui-suis-je.html">qui suis-je ?</a></li>
                     <li><a href="hypnose.html">hypnose éricksonienne</a></li>
-                    <li><a href="seance.html">séance</a></li>
+                    <li><a class=current href="seance.html">séance</a></li>
                     <li><a href="tarifs.html">tarifs</a></li>
                 </ul>
             </nav>
         </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </header>
-    <main>
-        <section id="seance">
-            <h1>seance</h1>
-        </section>
-    </main>
+    <div class="centre-ecran">
+        <aside class="left-aside">
+        </aside>
 
-    <footer>
-        <div class="text-footer">
-            <p>amélie blondel</p>
-            <p>06 07 90 76 83</p>
-            <p>ameconscience@outlook.fr</p>
-            <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+        <main>
+            <section id="seance">
+                <h3>seance</h3>
+            </section>
+            <h4>Le déroulement d'une séance</h4>
+            <p>Prévoyez entre 45 minutes et 1h environ par séance.</p>
+            <p>La première séance est déterminante pour nous permettre de bien faire connaissance et déterminer
+                précisément votre/vos objectif(s). Cette étape est essentielle et détermine la suite de la prise en
+                charge.<br>
+                Une séance entière peut y être consacrée, cela fait partie intégrante du soin.</p>
+            <p>La séance d'hypnose à proprement parler consiste à vous accompagner vers l'état de conscience amplifiée
+                en utilisant toutes les informations recueillies lors de l'entretien afin de guider au mieux le travail
+                que nous allons faire ensemble. </p>
+            <p>Chaque prise en charge est personnalisée pour correspondre au mieux aux besoin de chacun.</p>
+        </main>
+        <div class="responsive-right-aside">
+            <aside class="right-aside">
+                <img src="assets/photo-profil2.png" alt="photo de profil" class="image-profil">
+                <h2>amélie blondel</h2>
+                <p>06 07 90 76 83</p>
+                <p>ameconscience@outlook.fr</p>
+                <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+            </aside>
         </div>
+    </div>
+    <footer>
         <div class="box-images">
             <img src="assets/logo1-3.png" alt="image du logo">
-            <img src="assets/ame-et-conscience2.png" alt="image ame et conscience">
             <img src="assets/fleur2.png" alt="image de fleur">
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>

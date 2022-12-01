@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <title>Hypnose</title>
 </head>
+
 <body>
     <header>
         <div class="box-images">
-            <img src="assets/logo1-3.png" alt="image du logo">
-            <img class="image-en-tete" src="assets/ame-et-conscience2-2.png" alt="image ame et conscience">
-            <img src="assets/fleur2.png" alt="image de fleur">
+            <img src="assets/logo1-3.png" alt="image du logo" class="logo">
+            <h1>Am&Conscience</h1>
+            <img src="assets/fleur2.png" alt="image de fleur" class="fleur-en-tete">
         </div>
-        <div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+
             <nav>
                 <ul>
-                    <li><a class=current href="index.html">accueil</a></li>
+                    <li><a href="index.html">accueil</a></li>
                     <li><a href="qui-suis-je.html">qui suis-je ?</a></li>
-                    <li><a href="hypnose.html">hypnose éricksonienne</a></li>
+                    <li><a class=current href="hypnose.html">hypnose éricksonienne</a></li>
                     <li><a href="seance.html">séance</a></li>
                     <li><a href="tarifs.html">tarifs</a></li>
                 </ul>
             </nav>
         </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </header>
-    <main>
-        <section id="hypnose">
-            <h1>hypnose éricksonienne</h1>
-        </section>
-    </main>
+    <div class="centre-ecran">
+        <aside class="left-aside">
+        </aside>
 
-    <footer>
-        <div class="text-footer">
-            <p>amélie blondel</p>
-            <p>06 07 90 76 83</p>
-            <p>ameconscience@outlook.fr</p>
-            <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+        <main>
+            <section id="hypnose">
+                <h3>hypnose éricksonienne</h3>
+            </section>
+            <h4>L'hypnose, qu'est-ce que c'est ?</h4>
+            <p>Avant tout chose, nous parlons bien ici d'hypnose thérapeutique et pas d'hypnose de spectacle !</p>
+            <p>L'hypnose est un <span>état complètement naturel</span> que tout le monde expérimente chaque jour sans le
+                savoir !
+            <p>Vous avez déjà été tellement absorbé par un film, un livre, un paysage qui défile, que vous n'avez pas vu
+                le temps passer ou pas entendu une personne qui vous parlait ? Et bien vous étiez en état d'hypnose !
+            </p>
+            <p>C'est un état de <span>conscience modifié</span>, une sorte de <span>dissociation</span>. Nous sommes
+                conscients de ce qui nous entoure et en même temps nous en sommes détachés.</p>
+            <p>L'hypnose permet d'avoir accès à notre <span>inconscient</span> et donc à des ressources que nous
+                possédons mais qui ne nous sont pas accessibles.</p>
+            <p>Avec l'<span>orientation solution</span>, nous allons définir un objectif ensemble, qui soit
+                <span>personnel, précis,
+                    atteignable, positif</span> et qui ne dépende que de vous (je ne suis pas magicienne non plus!) et
+                je vais vous guider
+                pour trouver en vous les ressources pour atteindre cet état désiré.</p>
+            <p>Tout ce travail est nécessairement basé sur la <span>confiance</span> mutuelle et la
+                <span>sécurité</span>.</p>
+            <p>C’est une <span>thérapie brève</span>, c’est à dire qui nécessite peu de séances.</p>
+
+            <h4>Quand avoir recours à l'hypnose ?</h4>
+            <p> L'hypnose va vous permettre de mobiliser vos ressources pour vous permettre d'avancer !</p>
+            <ul>
+                <li>- Se recentrer sur soi, son bien-être et son énergie,</li>
+                <li>- Atteindre un état de relaxation profonde,</li>
+                <li>- Faciliter ou renforcer des changements, des apprentissages, la mise en route de projets,</li>
+                <li>- Travailler sur ses pensées ou croyances limitantes, nos peurs,</li>
+                <li>- Gagner en confiance et en positivité,</li>
+                <li>- Mieux gérer ses émotions,</li>
+                <li>- Gérer différemment des douleurs chroniques...</li>
+            </ul>
+            <p> Je continue à me former pour pouvoir toujours mieux vous accompagner !</p>
+
+            <h4> Contre-indications ?</h4>
+            <p> Les personnes souffrant de troubles de la personnalité.</p>
+
+            <p>Quoi qu'il en soit je me réserve le droit de refuser un accompagnement si j'estime ne pas être la
+                personne qu'il vous faut. Je travaille en accord avec mes valeurs et ne me lancerai pas dans un
+                accompagnement que je ne maîtrise pas. </p>
+        </main>
+        <div class="responsive-right-aside">
+            <aside class="right-aside">
+                <img src="assets/photo-profil2.png" alt="photo de profil" class="image-profil">
+                <h2>amélie blondel</h2>
+                <p>06 07 90 76 83</p>
+                <p>ameconscience@outlook.fr</p>
+                <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+            </aside>
         </div>
+    </div>
+    <footer>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f9e9e7" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,165.3C384,181,480,235,576,229.3C672,224,768,160,864,149.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
         <div class="box-images">
             <img src="assets/logo1-3.png" alt="image du logo">
-            <img src="assets/ame-et-conscience2.png" alt="image ame et conscience">
             <img src="assets/fleur2.png" alt="image de fleur">
         </div>
-    </footer></body>
-<script src="index.js"></script>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
 </html>

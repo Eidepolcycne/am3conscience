@@ -12,15 +12,56 @@
 :root {
     --backround: #f9e9e7;
     --primary-color: #cb9c9c;
-    font-family: 'Courgette', cursive;
-    background-color: var(--backround);
-
+    font-family: 'Libre Baskerville', serif;
 }
 
+/* définition des principales tailles et couleurs */
+.image {
+    width: 100%;
+    border-radius: 50%;
+}
+.image-profil {
+    width: 100%;
+    border-radius: 50% 5%;
+}
+
+h1 {
+    width: 100vw;
+    color: var(--primary-color);
+    padding-top: 5px;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+svg {
+    height: 300px;
+    width: 100%;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: var(--primary-color);
+    padding: 3% 0;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+/* définition du header */
 header {
     background-color: var(--backround);
     position: fixed;
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -28,11 +69,10 @@ header {
     display: flex;
     justify-content: space-between;
     height: 80%;
-    /* width: auto; */
 }
 
-.image-en-tete {
-    width: 60%;
+.box-images div {
+    width: 20%;
 }
 
 nav ul {
@@ -41,46 +81,177 @@ nav ul {
     text-transform: uppercase;
 }
 
-aside{
-    padding-top: 20vh;
-    float: left;
-    width: 30vh;
-    height: 60vw;
+li a{
+    color: var(--primary-color);
+}
+
+.close {
+    display: none;
+}
+
+/* définition partie centrale */
+.centre-ecran {
+    display: flex;
+    padding-top: 25vh;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.left-aside {
+    width: 160px;
+    height: 100%;
 }
 
 main {
-    padding-top: 20vh;
-    text-align: center;
-    width: 60vw;
-    height: 60vw;
+    text-align: left;
+    width: 50vw;
+    margin-right: 30%;
 }
 
-h1 {
-    color: var(--primary-color);
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
+main p {
+    padding: 2% 0;
 }
 
-.mots-important,
-span {
-    color: var(--primary-color);
+.right-aside {
+    position: fixed;
+    right: 0;
+    width: 30vw;
 }
 
+.right-aside p {
+    padding: 4% 0;
+}
+
+/* défition du footer */
 footer {
+    position: fixed;
     height: 20vh;
     width: 100vw;
 }
 
-.text-footer {
-    display: flex;
-    justify-content: space-around;
-    height: 20%;
-    width: auto;
+
+
+@media screen and (max-width: 1000px) {
+
+.fleur-en-tete {
+    display: none;
+}  
+
 }
-.image-profil{
-    width:100%;
-    height:auto;
-    padding-top: 20vh;
-    float: right;
+main{
+    margin-right: 31vw;
 }
+
+
+
+@media screen and (max-width: 650px) {
+
+    /* Voici le menu burger : */
+
+    /* Sidenav menu */
+    .sidenav {
+        height: 60vh;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 20vh;
+        left: -300px;
+        background-color: #e8e8e8;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    /* Sidenav menu links */
+    nav ul {
+        font-size: 20px;
+        color: #818181;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #111;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 48vw;
+    }
+
+    /* responsive telephone */
+    footer,
+    .left-aside,
+    .fleur-en-tete {
+        display: none;
+    }
+
+    .box-images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+    }
+
+    h1 {
+        size:50%;
+        padding-top: 0;
+        font-size: 50px;
+    }
+
+    .logo{
+        height: 50%;
+        width: auto;
+    }
+
+    .centre-ecran {
+        padding-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    main {
+        width: 90vw;
+        padding-left: 10vw;
+    }
+
+    .responsive-right-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-aside{
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-profil {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+
+}   

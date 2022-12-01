@@ -6,22 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital@1&display=swap"
-        rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>ame-et-conscience</title>
 </head>
-<aside>
-    
-</aside>
+
 <body>
     <header>
         <div class="box-images">
-            <img src="assets/logo1-3.png" alt="image du logo">
-            <img class="image-en-tete" src="assets/ame-et-conscience2-2.png" alt="image ame et conscience">
-            <img src="assets/fleur2.png" alt="image de fleur">
+            <img src="assets/logo1-3.png" alt="image du logo" class="logo">
+            <h1>Am&Conscience</h1>
+            <img src="assets/fleur2.png" alt="image de fleur" class="fleur-en-tete">
         </div>
-        <div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
             <nav>
                 <ul>
                     <li><a class=current href="index.html">accueil</a></li>
@@ -32,49 +30,49 @@
                 </ul>
             </nav>
         </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </header>
-    <main>
-        <section id="accueil">
-            <h1>accueil</h1>
-        </section>
-        <section id="text">
-            <h2>en quoi puis-je vous aider ?</h2>
-            <p>Je m'appelle <span>Amélie Blondel</span>, je suis <span>hypnothérapeute</span> en hypnose Ericksonienne orientée solution.
-
-                Je vous propose de vous <span>accompagner</span> dans votre démarche de <span>changement</span> afin que vous puissiez trouver en vous toutes les <span>ressources</span> qui vous permettront  d'atteindre votre <span>objectif</span>!​
-            </p>
-            <ul>
-                <li>Des émotions qui vous posent problèmes?</li>
-                <li>Des pensées qui vous gênent ?</li>
-                <li>Un comportement que vous souhaitez modifier ?</li>
-            </ul>
-            <img src="assets/nuage de mot fini_edited.webp" alt="image de mots">
-            <p>
-                <span> L’hypnose,</span> pour :
-            <ul>
-                <li>actionner des leviers que l’on ne parvenait pas à activer auparavant</li>
-                <li>se retrouver</li>
-                <li>aller mieux</li>
-                <li>changer</li>
-                <li>avancer</li>
-            </ul>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="text-footer">
-            <p>amélie blondel</p>
-            <p>06 07 90 76 83</p>
-            <p>ameconscience@outlook.fr</p>
-            <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+    <div class="centre-ecran">
+        <aside class="left-aside">
+        </aside>
+        <main>
+            <section id="accueil">
+                <h3>accueil</h3>
+            </section>
+            <section id="text">
+                <h4>En quoi puis-je vous aider ?</h4>
+                <p>Je m'appelle <span>Amélie Blondel</span>, je suis <span>hypnothérapeute</span> en hypnose
+                    Ericksonienne orientée solution.</p>
+                <p>
+                    Je vous propose de vous <span>accompagner</span> dans votre démarche de <span>changement</span> afin
+                    que vous puissiez trouver en vous toutes les <span>ressources</span> qui vous permettront
+                    d'atteindre votre <span>objectif</span>!</p>
+                <img src="assets/still-lake.jpg" alt="image de mots" class="image">
+            </section>
+        </main>
+        <div class="responsive-right-aside">
+            <aside class="right-aside">
+                <img src="assets/photo-profil2.png" alt="photo de profil" class="image-profil">
+                <h2>amélie blondel</h2>
+                <p>06 07 90 76 83</p>
+                <p>ameconscience@outlook.fr</p>
+                <a href="instram.com/am3conscience">instagram.com/am3conscience</a>
+            </aside>
         </div>
+    </div>
+    <footer>
         <div class="box-images">
             <img src="assets/logo1-3.png" alt="image du logo">
-            <img src="assets/ame-et-conscience2.png" alt="image ame et conscience">
             <img src="assets/fleur2.png" alt="image de fleur">
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 
 </html>
