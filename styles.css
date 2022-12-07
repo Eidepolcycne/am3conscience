@@ -50,7 +50,9 @@ h3 {
   text-transform: uppercase;
   font-size: 32px;
   color: var(--primary-color);
-  padding: 3% 0;
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  text-align: center;
 }
 
 h4 {
@@ -93,6 +95,16 @@ li a {
   display: none;
 }
 
+a:hover {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.current {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /* définition partie centrale */
 .centre-ecran {
   display: flex;
@@ -122,12 +134,6 @@ main p {
 
 main article {
   padding: 5%;
-}
-
-h3 {
-  animation-name: slideInLeft;
-  animation-duration: 2s;
-  text-align: center;
 }
 
 @keyframes slideInLeft {
@@ -184,7 +190,6 @@ footer {
 }
 
 main {
-  overflow: inherit;
   margin-right: 31vw;
 }
 
@@ -193,27 +198,29 @@ main {
 
   /* Sidenav menu */
   .sidenav {
-    height: 40vh;
+    height: 35vh;
     width: 300px;
     position: fixed;
     z-index: 1;
     top: 25vh;
     left: -300px;
     background-color: #e8e8e8;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     transition: left 0.5s ease;
   }
 
   /* Sidenav menu links */
   nav ul {
-    font-size: 20px;
+    font-size: 19px;
     color: #818181;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     transition: 0.3s;
   }
-
+  nav ul li {
+    padding-top: 15px;
+  }
   .sidenav a:hover {
     color: #111;
   }
@@ -261,6 +268,7 @@ main {
   h3 {
     font-size: 24px;
   }
+
   .logo {
     height: 50%;
     width: auto;
