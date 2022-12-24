@@ -76,6 +76,7 @@ header {
   z-index: 999;
   height: 25vh;
   width: 100vw;
+  padding-bottom: 10px;
 }
 
 .box-images {
@@ -125,9 +126,10 @@ a:hover {
   width: 80px;
 }
 
-div main {
+/*div */main {
   text-align: left;
   width: 58vw;
+    margin-right: 31vw;
   height: 100%;
   padding: 5%;
   border-radius: 15%;
@@ -191,7 +193,7 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .fleur-en-tete {
+  .fleur {
     display: none;
   }
 }
@@ -200,9 +202,9 @@ li a {
   font-size: 1.5vw;
 }
 
-main {
-  margin-right: 31vw;
-}
+/* main { */
+  /* margin-right: 31vw; */
+/* } */
 
 @media screen and (max-width: 650px) {
   /* Voici le menu burger : */
@@ -273,7 +275,7 @@ main {
   /* responsive telephone */
   footer,
   .left-aside,
-  .fleur-en-tete {
+  .fleur{
     display: none;
   }
 
