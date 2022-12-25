@@ -172,7 +172,7 @@ article {
 
 .right-aside {
   position: fixed;
-  /* z-index: 1; */
+  z-index: 1;
   right: 0;
   width: 30vw;
 }
