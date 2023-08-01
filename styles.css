@@ -16,16 +16,20 @@
   background-color: var(--backround);
 }
 
-  .image-profil-téléphone{
-    display: none;
-  }
-
+/* body {
+  max-height: 10dvh;
+}
+ */
 /* définition des principales tailles et couleurs */
+.image-profil-téléphone{
+  display: none;
+}
+
 .logo,
 .fleur {
-  /* width: 100%; */
   height: 100%;
 }
+
 .image {
   width: 100%;
   border-radius: 5%;
@@ -72,10 +76,12 @@ h4 {
 span {
   color: var(--primary-color);
 }
+
 #faqSpan {
   color: var(--primary-color);
   font-weight: bold;
 }
+
 /* définition du header */
 header {
   background-color: var(--backround);
@@ -84,19 +90,25 @@ header {
   height: 25vh;
   width: 100vw;
   padding-bottom: 10px;
+  padding-top: 10vh;
 }
 
-.box-images {
+.box-images-entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80%;
 }
 
-.box-entete{
+.entete{
   height: 100%;
 }
 
+.box-images{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
 .logo,
 .fleur {
   height: 100%;
@@ -288,19 +300,26 @@ li a {
     display: none;
   }
 
+  .box-images-entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height:80%;
+  }
+
+  .entete{
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+  }
+
   .box-images {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: initial;
-    margin-top: 1vh;
-  }
-
-  .box-entete{
-    display: flex;
-    justify-content: space-around;
-    height: 50%;
-    width: 100%;
   }
 
   h3 {
@@ -346,10 +365,10 @@ li a {
     width: 100%;
     border-radius: 50%;
   }
+
   .image-profil-téléphone{
     display: block;
     height: 100%;
     border-radius: 50%;
-
   }
 }
