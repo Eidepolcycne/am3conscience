@@ -82,6 +82,10 @@ span {
   font-weight: bold;
 }
 
+b {
+  font-weight: normal;
+}
+
 /* définition du header */
 header {
   background-color: var(--backround);
@@ -251,6 +255,7 @@ li a {
   }
   nav ul li {
     padding-top: 15px;
+    padding-left: 2vw;
   }
   .sidenav a:hover {
     color: var(--primary-color);
