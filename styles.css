@@ -116,9 +116,7 @@ header {
 .fleur {
   height: 100%;
 }
-img{
-  height: 100%;
-}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -331,7 +329,7 @@ li a {
   }
 
   a{
-    display: block;
+    display: inline-block;
     height: 100%;
   }
 
