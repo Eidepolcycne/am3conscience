@@ -15,19 +15,19 @@
   font-family: "Libre Baskerville", serif;
   background-color: var(--backround);
 }
-.hauteur-container{
+/* .hauteur-container{
   height: 100px;
-}
+} */
 
 /* définition des principales tailles et couleurs */
 .image-profil-téléphone{
   display: none;
 }
 
-.logo,
+/* .logo,
 .fleur {
   height: 100%;
-}
+} */
 
 .image {
   width: 100%;
@@ -112,11 +112,13 @@ header {
   height: 100%;
 }
 
-.logo,
+/* .logo,
 .fleur {
   height: 100%;
+} */
+img{
+  height: 100%;
 }
-
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -328,10 +330,10 @@ li a {
     font-size: 24px;
   }
 
-  .logo {
+  /* .logo {
     height: 100%;
     width: auto;
-  }
+  } */
 
   .centre-ecran {
     padding-top: 25vh;
