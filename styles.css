@@ -318,12 +318,7 @@ li a {
     height: 50%;
     width: 100%;
   }
-  a {
-    display: block;
-  }
-  .logo {
-    height: 100px;
-  } 
+
   .box-images {
     display: flex;
     flex-direction: column;
@@ -335,10 +330,15 @@ li a {
     font-size: 24px;
   }
 
-  /* .logo {
+  a{
+    display: block;
+    height: 100%;
+  }
+  
+  .logo {
     height: 100%;
     width: auto;
-  } */
+  }
 
   .centre-ecran {
     padding-top: 25vh;
