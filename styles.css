@@ -85,6 +85,16 @@ b {
   font-weight: normal;
 }
 
+a {
+  display: inline-block;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
 /* définition du header */
 header {
   background-color: var(--backround);
@@ -328,15 +338,6 @@ li a {
     font-size: 24px;
   }
 
-  a{
-    display: inline-block;
-    height: 100%;
-  }
-
-  .logo {
-    height: 100%;
-    width: auto;
-  }
 
   .centre-ecran {
     padding-top: 25vh;
