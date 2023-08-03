@@ -318,7 +318,12 @@ li a {
     height: 50%;
     width: 100%;
   }
-
+  a {
+    display: block;
+  }
+  .logo {
+    height: 100px;
+  } 
   .box-images {
     display: flex;
     flex-direction: column;
