@@ -15,35 +15,48 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
-const dateNaissance = new Date('1978-03-05');
+document.querySelector('.image-profil-telephone').addEventListener('click', function(event) {
+  event.preventDefault();  // Empêche le comportement de clic par défaut
+  let targetElement = document.querySelector('#right_aside');  // Remplacez par l'ID de votre élément cible
 
-function calculerAge(dateNaissance) {
-  let difference = Date.now() - dateNaissance.getTime();
-  let ageDate = new Date(difference);
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
-}
-// Mettez à jour l'élément HTML avec l'âge calculé
-document.getElementById('age').textContent = calculerAge(dateNaissance);
+  // Calcule la position Y de l'élément cible
+  let targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-// Définissez vos chiffres initiaux
-let chiffre1 = 22;
-let chiffre2 = 5;
+  // Défile vers l'élément cible
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+});
+// document
+//   .querySelector(".image-profil-telephone")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
 
-// Mettez à jour les éléments HTML avec les chiffres initiaux
-document.getElementById('chiffre1').textContent = chiffre1;
-document.getElementById('chiffre2').textContent = chiffre2;
+//     var target = document.querySelector("#right_aside");
+//     var topOffset = window.pageYOffset || document.documentElement.scrollTop;
+//     var targetOffsetTop = target.getBoundingClientRect().top + topOffset;
+//     var startPosition = topOffset;
+//     var distance = targetOffsetTop - startPosition;
+//     var duration = 20000;
+//     var start = null;
 
-// Calculez le temps jusqu'à la prochaine date d'anniversaire
-let prochaineDateAnniversaire = new Date(dateNaissance);
-prochaineDateAnniversaire.setFullYear(new Date().getFullYear() + 1);
-let tempsRestant = prochaineDateAnniversaire - Date.now();
+//     window.requestAnimationFrame(step);
 
-// Incrémentez les chiffres chaque année après la prochaine date d'anniversaire
-setTimeout(function() {
-  setInterval(function() {
-    chiffre1++;
-    chiffre2++;
-    document.getElementById('chiffre1').textContent = chiffre1;
-    document.getElementById('chiffre2').textContent = chiffre2;
-  }, 1000 * 60 * 60 * 24 * 365);
-}, tempsRestant);
+//     function step(timestamp) {
+//       if (!start) start = timestamp;
+//       var progress = timestamp - start;
+//       window.scrollTo(
+//         0,
+//         easeInOutCubic(progress, startPosition, distance, duration)
+//       );
+//       if (progress < duration) window.requestAnimationFrame(step);
+//     }
+//   });
+
+// function easeInOutCubic(t, b, c, d) {
+//   t /= d / 2;
+//   if (t < 1) return (c / 2) * t * t * t + b;
+//   t -= 2;
+//   return (c / 2) * (t * t * t + 2) + b;
+// }

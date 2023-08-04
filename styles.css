@@ -20,7 +20,7 @@
 } */
 
 /* définition des principales tailles et couleurs */
-.image-profil-téléphone{
+.image-profil-telephone {
   display: none;
 }
 
@@ -112,11 +112,11 @@ header {
   height: 80%;
 }
 
-.entete{
+.entete {
   height: 100%;
 }
 
-.box-images{
+.box-images {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -214,7 +214,7 @@ article {
   width: 30vw;
 }
 
-.right-aside p{
+.right-aside p {
   padding-top: 4%;
 }
 
@@ -236,7 +236,6 @@ li a {
   font-size: 1.5vw;
 }
 
-
 @media screen and (max-width: 650px) {
   /* Voici le menu burger : */
 
@@ -245,7 +244,7 @@ li a {
     height: 300px;
     width: 60vw;
     position: fixed;
-    z-index:999;
+    z-index: 999;
     top: 25vh;
     left: -60vh;
     background-color: #e8e8e8;
@@ -296,20 +295,20 @@ li a {
 
   a:hover {
     font-weight: bold;
-    font-size: 4.0vw;
+    font-size: 4vw;
   }
 
- .current {
+  .current {
     font-size: 3.5vw;
   }
-  
-.close{
-  display:initial;
-}
+
+  .close {
+    display: initial;
+  }
   /* responsive telephone */
   footer,
   .left-aside,
-  .fleur{
+  .fleur {
     display: none;
   }
 
@@ -317,10 +316,10 @@ li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:80%;
+    height: 80%;
   }
 
-  .entete{
+  .entete {
     display: flex;
     justify-content: space-around;
     height: 50%;
@@ -338,14 +337,13 @@ li a {
     font-size: 24px;
   }
 
-
   .centre-ecran {
     padding-top: 25vh;
     display: flex;
     flex-direction: column;
     height: 75vh;
   }
-  
+
   div main {
     overflow: hidden;
     overflow: scroll;
@@ -374,8 +372,8 @@ li a {
     border-radius: 50%;
   }
 
-  .image-profil-téléphone{
-    display: block; 
+  .image-profil-telephone {
+    display: block;
     height: 100%;
     border-radius: 50%;
   }
