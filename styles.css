@@ -231,6 +231,7 @@ footer {
     display: none;
   }
 }
+
 li a {
   color: var(--primary-color);
   font-size: 1.5vw;
