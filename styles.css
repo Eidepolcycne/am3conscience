@@ -226,6 +226,9 @@ footer {
   bottom: 0;
 }
 
+.ref b {
+  text-decoration: underline;
+}
 @media screen and (max-width: 1000px) {
   .fleur {
     display: none;
