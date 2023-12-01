@@ -15,19 +15,11 @@
   font-family: "Libre Baskerville", serif;
   background-color: var(--backround);
 }
-/* .hauteur-container{
-  height: 100px;
-} */
 
 /* définition des principales tailles et couleurs */
 .image-profil-telephone {
   display: none;
 }
-
-/* .logo,
-.fleur {
-  height: 100%;
-} */
 
 .image {
   width: 100%;
