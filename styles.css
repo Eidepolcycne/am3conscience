@@ -175,6 +175,11 @@ main article {
   padding: 5%;
 }
 
+.icons {
+  width: 20px;
+  height: 20px;
+}
+
 @keyframes slideInLeft {
   0% {
     transform: translate(-60vw, 0px);
