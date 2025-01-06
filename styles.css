@@ -87,6 +87,20 @@ a {
   width: auto;
 }
 
+.rdvButton {
+  font-family: "Libre Baskerville", serif; 
+  background-color: var(--backround);  
+  padding: 10px 20px;
+  border:none;
+  border-radius: 25px;
+  display: block; /* Nécessaire pour margin auto sur un bouton */
+  margin: 0 auto 10px auto; /* Centre horizontalement */
+}
+
+.textRdvButton{
+  color: var(--primary-color);
+}
+
 /* définition du header */
 header {
   background-color: var(--backround);
