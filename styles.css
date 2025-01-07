@@ -400,7 +400,7 @@ li a {
     position: relative;
   }
   .rdvButton {
-    bottom: 0%;
+    bottom: 0;
     position: absolute;
   }
 }
